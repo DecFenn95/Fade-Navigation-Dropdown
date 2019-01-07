@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fade In Navigation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <script src="code.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="filter_holder" class="content-area">
+    <div id="FilterHeading" class="alert alert-info">
+      MENU
+      <span class="glyphicon glyphicon-minus pull-right"></span>
+    </div>
+    <div id="FilterContent" class="content-area">
+      <div class="well">
+        <div class="row">
+
+        <nav id="filterField" class="col-md-10 col-md-offset-1">
+          <a href="#"><span>About</span></a>
+          <a href="#"><span>Contact</span></a>
+          <a href="#"><span>Register</span></a>
+          <a href="#"><span>Help</span></a>
+        </nav>
+
+      </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('#FilterHeading').click(function() {
+      $('#FilterContent').slideToggle();
+      $('span', '#FilterHeading').toggleClass('glyphicon-minus');
+      $('span', '#FilterHeading').toggleClass('glyphicon-plus');
+    });
+  </script>
+</body>
+
+</html>

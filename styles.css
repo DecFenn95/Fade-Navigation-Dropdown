@@ -1,0 +1,41 @@
+
+.filter_holder {
+  width: 80%;
+  margin-left: 10%;
+  clear: both;
+}
+
+#FilterHeading {
+  margin: auto;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+#filterField {
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: block;
+  font-size: 3em;
+  text-decoration: none;
+  overflow: hidden;
+  background: transparent;
+  text-align: center;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav > a > span {
+  display: block;
+  margin-top: -2em;
+  animation: menuOpen 1s forwards;
+}
+
+@keyframes menuOpen {
+  to {
+    margin-top: 0;
+  }
+}
